@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>متجر الأحذية | كعب، أحذية، شحاطات وشنط</title><meta name="description" content="متجر أحذية نسائية ورجالية: كعب، أحذية، شحاطات وخف، شنط مدرسية وشنط يدوية. اطلب بسهولة عبر واتساب مع التوصيل."><meta name="theme-color" content="#8e1f4a"><meta property="og:type" content="website"><meta property="og:title" content="متجر الأحذية"><meta property="og:description" content="كعب، أحذية، شحاطات، شنط مدرسية ويدوية. اطلب عبر واتساب."><meta name="robots" content="index,follow"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ShoeStore","name":"متجر الأحذية","telephone":"+9647714456543","areaServed":"IQ"}</script>
+<style>
+:root{--bg:#fff8f3;--card:#fff;--ink:#2b1620;--mut:#8a6f78;--pri:#8e1f4a;--pri2:#c9356b;--gold:#c9a24b;--line:#f0dfe3;--wa:#25d366;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1015;--card:#26171e;--ink:#fbeef2;--mut:#c7a5b1;--line:#3a2530;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1015;--card:#26171e;--ink:#fbeef2;--mut:#c7a5b1;--line:#3a2530;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;padding-bottom:84px}
+header{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:18px 16px 22px;text-align:center;position:relative}
+header h1{margin:0;font-size:26px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+.ic{position:absolute;top:14px;background:rgba(255,255,255,.2);border:0;color:#fff;border-radius:20px;padding:7px 12px;font-size:14px;cursor:pointer}
+#cb{inset-inline-start:12px}#ab{inset-inline-end:12px}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px;position:sticky;top:0;background:var(--bg);z-index:5}
+nav button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:22px;font-size:15px;cursor:pointer}
+nav button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;padding:0 12px;max-width:1000px;margin:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card img,.ph{width:100%;aspect-ratio:1;object-fit:cover;background:var(--line);display:flex;align-items:center;justify-content:center;font-size:40px}
+.cb{padding:10px;display:flex;flex-direction:column;gap:8px;flex:1}
+.nm{font-weight:600;font-size:15px}.pr{color:var(--pri2);font-weight:700;font-size:16px}
+.sz{display:flex;flex-wrap:wrap;gap:5px}.sz span{border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:13px;cursor:pointer}
+.sz span.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn{border:0;border-radius:12px;padding:10px;font-size:15px;cursor:pointer;background:var(--pri);color:#fff;margin-top:auto}
+.btn.g{background:var(--wa)}.btn.l{background:var(--line);color:var(--ink)}.btn.r{background:#c0392b}
+.adm{display:flex;gap:6px}.adm .btn{flex:1;padding:7px;font-size:13px;margin:0}
+.empty{text-align:center;color:var(--mut);padding:40px 16px;grid-column:1/-1}
+#wa{position:fixed;bottom:0;inset-inline:0;background:var(--wa);color:#fff;text-align:center;padding:14px 10px calc(14px + env(safe-area-inset-bottom,0px));font-size:16px;font-weight:600;text-decoration:none;z-index:8}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:20;display:flex;align-items:flex-end;justify-content:center}
+.sh{background:var(--bg);width:100%;max-width:520px;max-height:90%;overflow:auto;border-radius:20px 20px 0 0;padding:16px;display:flex;flex-direction:column;gap:10px}
+.sh h2{margin:0}.sh input,.sh select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:var(--card);color:var(--ink)}
+.ci{display:flex;gap:10px;align-items:center;background:var(--card);border-radius:12px;padding:8px;border:1px solid var(--line)}
+.ci img{width:52px;height:52px;border-radius:8px;object-fit:cover}.ci div{flex:1;font-size:14px}
+.tot{font-size:18px;font-weight:700;display:flex;justify-content:space-between}
+#toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:20px;z-index:30;font-size:14px}
+</style></head><body><div id="app"></div>
+<script id="data" type="application/json">{"store":"متجر الأحذية","tag":"أناقة تليق بكِ","phone":"9647714456543","cur":"د.ع","products":[]}</script>
+<script id="js">
+const $=s=>document.querySelector(s),D=JSON.parse($('#data').textContent);
+const CATS=[['heels','👠 الكعب'],['shoes','👟 الأحذية'],['slides','🩴 الشحاطات والخف'],['school','🎒 الشنط المدرسية'],['hand','👜 الشنط اليدوية']];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let cat='heels',admin=false,sel={},mem=[],modal='';
+const ld=()=>{try{return JSON.parse(localStorage.getItem('cart')||'[]')}catch(e){return mem}};
+let cart=ld();const sv=()=>{mem=cart;try{localStorage.setItem('cart',JSON.stringify(cart))}catch(e){}};
+const money=n=>Number(n).toLocaleString('ar-EG')+' '+D.cur;
+function toast(t){const e=document.createElement('div');e.id='toast';e.textContent=t;document.body.append(e);setTimeout(()=>e.remove(),2200)}
+function build(){const j=JSON.stringify(D).replace(/</g,'\\u003c');const css=document.querySelector('style').textContent,js=$('#js').textContent;
+return '<!DOCTYPE html>\n<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>'+esc(D.store)+' | كعب، أحذية، شحاطات وشنط</title><meta name="description" content="متجر أحذية نسائية ورجالية: كعب، أحذية، شحاطات وخف، شنط مدرسية وشنط يدوية. اطلب بسهولة عبر واتساب مع التوصيل."><meta name="theme-color" content="#8e1f4a"><meta property="og:type" content="website"><meta property="og:title" content="متجر الأحذية"><meta property="og:description" content="كعب، أحذية، شحاطات، شنط مدرسية ويدوية. اطلب عبر واتساب."><meta name="robots" content="index,follow"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ShoeStore","name":"متجر الأحذية","telephone":"+9647714456543","areaServed":"IQ"}<\/script><style>'+css+'</style></head><body><div id="app"></div>\n<script id="data" type="application/json">'+j+'<\/script>\n<script id="js">'+js+'<\/script></body></html>'}
+function save(){modal='';render();const b=new Blob([build()],{type:'text/html'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='index.html';a.click();toast('نُزّل ملف index.html — ارفعه على الاستضافة لتحديث الموقع')}
+function render(){
+const ps=D.products.filter(p=>p.cat===cat);
+$('#app').innerHTML=`<header><button class="ic" id="cb" data-a="cart">🛒 السلة (${cart.reduce((s,i)=>s+i.q,0)})</button>${admin?'<button class="ic" id="ab" data-a="set">⚙️ إعدادات</button>':''}<h1>${esc(D.store)}</h1><p>${esc(D.tag)}</p></header>
+<nav>${CATS.map(c=>`<button class="${c[0]===cat?'on':''}" data-a="cat" data-v="${c[0]}">${c[1]}</button>`).join('')}</nav>
+<div class="grid">${admin?`<button class="btn" style="grid-column:1/-1;margin:0" data-a="add">➕ إضافة منتج جديد</button>`:''}
+${ps.map(p=>`<div class="card">${p.img?`<img src="${p.img}" alt="">`:'<div class="ph">👟</div>'}<div class="cb"><div class="nm">${esc(p.name)}</div><div class="pr">${money(p.price)}</div>
+${p.sizes.length?`<div class="sz">${p.sizes.map(s=>`<span class="${sel[p.id]===s?'on':''}" data-a="sz" data-id="${p.id}" data-v="${esc(s)}">${esc(s)}</span>`).join('')}</div>`:''}
+<button class="btn" data-a="buy" data-id="${p.id}">أضف للسلة</button>
+${admin?`<div class="adm"><button class="btn l" data-a="edit" data-id="${p.id}">تعديل</button><button class="btn r" data-a="del" data-id="${p.id}">حذف</button></div>`:''}</div></div>`).join('')||'<div class="empty">لا توجد منتجات في هذا القسم حالياً</div>'}</div>
+<a id="wa" href="https://wa.me/${D.phone}" target="_blank" rel="noopener">💬 التواصل مع صاحب المتجر على واتساب</a>${modal}`}
+const find=id=>D.products.find(p=>p.id===id);
+const ov=h=>`<div class="ov" data-a="x"><div class="sh">${h}</div></div>`;
+function cartView(){const t=cart.reduce((s,i)=>s+i.p*i.q,0);
+modal=ov(`<h2>🛒 سلتك</h2>${cart.map((i,k)=>`<div class="ci">${i.img?`<img src="${i.img}">`:''}<div>${esc(i.n)}${i.s?`<br>القياس: ${esc(i.s)}`:''}<br>${money(i.p)}</div><button class="btn l" data-a="q" data-k="${k}" data-v="-1">−</button><b>${i.q}</b><button class="btn l" data-a="q" data-k="${k}" data-v="1">+</button></div>`).join('')||'<div class="empty">السلة فارغة</div>'}
+${cart.length?`<div class="tot"><span>المجموع</span><span>${money(t)}</span></div><button class="btn g" data-a="co">إتمام الشراء</button>`:''}<button class="btn l" data-a="close">إغلاق</button>`);render()}
+let loc='';
+function coView(){modal=ov(`<h2>إتمام الطلب</h2><input id="cn" placeholder="الاسم"><input id="cp" type="tel" placeholder="رقم هاتفك"><button class="btn l" data-a="loc">📍 مشاركة موقعي للتوصيل</button><div id="ls" style="font-size:13px;color:var(--mut)">${loc?'✅ تم تحديد الموقع':''}</div><button class="btn g" data-a="send">إرسال الطلب عبر واتساب</button><button class="btn l" data-a="cart">رجوع</button>`);render()}
+function prodForm(p){p=p||{cat,name:'',price:'',sizes:[],id:''};modal=ov(`<h2>${p.id?'تعديل منتج':'منتج جديد'}</h2><select id="fc">${CATS.map(c=>`<option value="${c[0]}" ${c[0]===p.cat?'selected':''}>${c[1]}</option>`).join('')}</select><input id="fn" placeholder="اسم المنتج" value="${esc(p.name)}"><input id="fp" type="number" placeholder="السعر" value="${esc(p.price)}"><input id="fs" placeholder="القياسات مفصولة بفاصلة مثل: 36,37,38,39" value="${esc(p.sizes.join(','))}"><input id="fi" type="file" accept="image/*"><button class="btn" data-a="saveP" data-id="${p.id}">حفظ ونشر</button><button class="btn l" data-a="close">إلغاء</button>`);render()}
+function setForm(){modal=ov(`<h2>إعدادات المتجر</h2><input id="s1" placeholder="اسم المتجر" value="${esc(D.store)}"><input id="s2" placeholder="الشعار" value="${esc(D.tag)}"><input id="s3" placeholder="رقم الواتساب بصيغة دولية بدون + مثل 9647701234567" value="${esc(D.phone)}"><input id="s4" placeholder="العملة" value="${esc(D.cur)}"><button class="btn" data-a="saveS">حفظ ونشر</button><button class="btn l" data-a="close">إلغاء</button>`);render()}
+function img(f){return new Promise(r=>{const i=new Image();i.onload=()=>{const m=700,k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL('image/jpeg',.8))};i.src=URL.createObjectURL(f)})}
+document.addEventListener('click',async e=>{const t=e.target.closest('[data-a]');if(!t)return;const a=t.dataset.a,id=t.dataset.id,v=t.dataset.v;
+if(a==='x'){if(e.target===t){modal='';render()}return}
+if(a==='close'){modal='';return render()}
+if(a==='cat'){cat=v;return render()}
+if(a==='sz'){sel[id]=v;return render()}
+if(a==='buy'){const p=find(id);if(p.sizes.length&&!sel[id])return toast('اختر القياس أولاً');const s=sel[id]||'',x=cart.find(i=>i.id===id&&i.s===s);x?x.q++:cart.push({id,n:p.name,p:+p.price,s,q:1,img:p.img});sv();toast('تمت الإضافة للسلة ✓');return render()}
+if(a==='cart')return cartView();
+if(a==='q'){const i=cart[+t.dataset.k];i.q+=+v;if(i.q<1)cart.splice(+t.dataset.k,1);sv();return cartView()}
+if(a==='co')return coView();
+if(a==='loc'){if(!navigator.geolocation)return toast('المتصفح لا يدعم الموقع');navigator.geolocation.getCurrentPosition(p=>{loc=`https://maps.google.com/?q=${p.coords.latitude},${p.coords.longitude}`;$('#ls').textContent='✅ تم تحديد الموقع'},()=>toast('تعذر تحديد الموقع، فعّل الإذن'));return}
+if(a==='send'){const n=$('#cn').value.trim(),ph=$('#cp').value.trim();if(!n||!ph)return toast('أدخل الاسم ورقم الهاتف');
+const t2=cart.reduce((s,i)=>s+i.p*i.q,0);
+const m=`🛍 طلب جديد\nالاسم: ${n}\nالهاتف: ${ph}\n\n`+cart.map(i=>`• ${i.n}${i.s?' | قياس '+i.s:''} × ${i.q} = ${money(i.p*i.q)}`).join('\n')+`\n\nالمجموع: ${money(t2)}\n📍 الموقع: ${loc||'سأرسله لاحقاً'}`;
+cart=[];sv();loc='';modal='';render();location.href=`https://wa.me/${D.phone}?text=${encodeURIComponent(m)}`;return}
+if(!admin)return;
+if(a==='add')return prodForm();
+if(a==='edit')return prodForm(find(id));
+if(a==='set')return setForm();
+if(a==='del'){if(confirm('حذف هذا المنتج؟')){D.products=D.products.filter(p=>p.id!==id);save()}return}
+if(a==='saveS'){D.store=$('#s1').value;D.tag=$('#s2').value;D.phone=$('#s3').value.replace(/\D/g,'');D.cur=$('#s4').value;return save()}
+if(a==='saveP'){const n=$('#fn').value.trim(),pr=$('#fp').value;if(!n||!pr)return toast('أدخل الاسم والسعر');const f=$('#fi').files[0];
+const o=id?find(id):{id:'p'+Date.now(),img:''};o.cat=$('#fc').value;o.name=n;o.price=+pr;o.sizes=$('#fs').value.split(/[,،]/).map(s=>s.trim()).filter(Boolean);if(f)o.img=await img(f);if(!id)D.products.push(o);cat=o.cat;return save()}
+});
+render();
+const chk=()=>{admin=location.hash==='#admin';render()};addEventListener('hashchange',chk);chk();
+</script></body></html>
